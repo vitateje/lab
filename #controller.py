@@ -35,3 +35,18 @@ rgpi.altera_processo(serviço)
 print(rgpi.etapa)
 
 
+#RPG
+
+class personagem():
+    def __init__(self, nome, força):
+        self.nome = nome
+        self.força = força
+        
+
+class guerreiro(personagem):
+    def __init__(self, nome,força, novo_nome):
+        self.nome = novo_nome
+
+vitor = guerreiro("vitor", 15, "Washin of Lords")
+
+print(vitor.nome)
