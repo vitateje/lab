@@ -13,7 +13,7 @@ etapa = "ok"
 serviço = "finalizado"
 
 
-#BPM
+#BPMN
 
 class bpmn():
     def __init__(self, processo, etapa): #constructor
@@ -39,14 +39,14 @@ print(rgpi.etapa)
 
 class personagem():
     def __init__(self, nome, força):
-        self.nome = nome
+        self.nome = "Lucas"
         self.força = força
         
 
 class guerreiro(personagem):
-    def __init__(self, nome,força, novo_nome):
-        self.nome = novo_nome
+    def __init__(self, nome,força):
+        self.nome = nome
 
-vitor = guerreiro("vitor", 15, "Washin of Lords")
+vitor = guerreiro("vitor", 15)
 
 print(vitor.nome)
