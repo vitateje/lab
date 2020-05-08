@@ -1,11 +1,23 @@
 console.log('IN TEST')
 
+CADASTRO = []
+
+
 function cadastrar() {
 
     var nome_imovel = document.getElementById('nome_imovel')
+    var tipo_imovel = document.getElementById('tipo_imovel')
     var alerta = nome_imovel.value
-    alert(`Código do Cliente é ${alerta} `)
+    CADASTRO.push({"Imovel":alerta, "Tipo":tipo_imovel.value})
+    alert(`Imovel Cadastrado ${alerta} `)
 
+}
+
+
+function consulta() {
+
+    alert(CADASTRO[0]["Imovel"])
+    
 }
 
 
